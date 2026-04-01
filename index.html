@@ -1,1 +1,126 @@
-<h1> Welcome ! </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic project page for CReF: Cross-modal and Recurrent Fusion for Depth-conditioned Humanoid Locomotion.">
+  <meta name="theme-color" content="#112126">
+  <title>CReF Project Page</title>
+  <link rel="preload" as="image" href="res/figs/cref.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#overview">CReF</a>
+      <nav class="section-nav" aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#abstract">Abstract</a>
+        <a href="#method">Method</a>
+        <a href="#experiments">Experiments</a>
+        <a href="#bibtex">BibTeX</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero reveal" id="overview">
+        <div class="hero-copy">
+          <p class="eyebrow">Academic Project Page</p>
+          <h1 id="project-title"></h1>
+          <p class="hero-tagline" id="hero-tagline"></p>
+          <div class="author-block">
+            <div class="authors" id="authors"></div>
+            <div class="affiliations" id="affiliations"></div>
+            <p class="correspondence" id="correspondence"></p>
+            <div class="institution-badge" id="institution-badge"></div>
+          </div>
+          <div class="hero-actions" id="hero-actions"></div>
+          <div class="hero-metrics" id="hero-metrics"></div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-video-frame">
+            <video
+              class="hero-video js-lazy-video"
+              id="hero-video"
+              muted
+              loop
+              playsinline
+              autoplay
+              controls
+              preload="metadata"
+              poster="res/posters/cref.jpg"
+              aria-label="Overview video of CReF humanoid locomotion"
+            ></video>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="abstract">
+        <div class="section-heading">
+          <p class="eyebrow">Paper</p>
+          <h2>Abstract</h2>
+        </div>
+        <div class="reading-panel">
+          <p id="abstract-text"></p>
+        </div>
+      </section>
+
+      <section class="section reveal" id="method">
+        <div class="section-heading">
+          <p class="eyebrow">Architecture</p>
+          <h2>Method</h2>
+        </div>
+        <div class="method-layout">
+          <article class="method-copy">
+            <p id="method-summary"></p>
+            <div class="method-highlights" id="method-highlights"></div>
+          </article>
+          <figure class="method-figure-frame">
+            <img src="res/figs/cref.svg" alt="Network architecture diagram of the CReF method.">
+          </figure>
+        </div>
+      </section>
+
+      <section class="section reveal" id="experiments">
+        <div class="section-heading">
+          <p class="eyebrow">Results</p>
+          <h2>Experiments</h2>
+        </div>
+        <div class="experiment-groups" id="experiment-groups"></div>
+      </section>
+
+      <section class="section reveal" id="bibtex">
+        <div class="section-heading">
+          <p class="eyebrow">Citation</p>
+          <h2>BibTeX</h2>
+        </div>
+        <div class="bibtex-panel">
+          <p class="bibtex-intro">If you find this work useful, please cite the arXiv version:</p>
+          <pre class="bibtex-entry" id="bibtex-entry"></pre>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p id="footer-note"></p>
+    </footer>
+  </div>
+
+  <div class="video-modal" id="video-modal" hidden>
+    <div class="video-modal__backdrop" data-close-modal></div>
+    <div class="video-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="video-modal__close" type="button" data-close-modal aria-label="Close video viewer">Close</button>
+      <div class="video-modal__content">
+        <video class="video-modal__player" id="modal-video" controls playsinline preload="metadata"></video>
+        <div class="video-modal__meta">
+          <p class="video-modal__eyebrow" id="modal-section"></p>
+          <h3 id="modal-title"></h3>
+          <p id="modal-caption"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
