@@ -2,7 +2,7 @@ const pageData = {
   title: "CReF: Cross-modal and Recurrent Fusion for Depth-conditioned Humanoid Locomotion",
   tagline:
     "A single-stage depth-conditioned humanoid locomotion framework that fuses proprioception and forward-facing depth for robust terrain traversal and zero-shot real-world deployment.",
-  paperUrl: "res/paper/CReF.pdf",
+  paperUrl: "res/paper/CReF_final.pdf",
   arxivUrl: "https://arxiv.org/abs/2603.29452",
   authors: [
     { name: "Yuan Hao", affiliationIds: [1] },
@@ -176,12 +176,12 @@ const pageData = {
       ]
     }
   ],
-  bibtex: `@article{hao2026cref,
-  title={CReF: Cross-modal and Recurrent Fusion for Depth-conditioned Humanoid Locomotion},
+  bibtex: `@ARTICLE{hao2026cref,
   author={Hao, Yuan and Yu, Ruiqi and Luo, Shixin and Zhang, Guoteng and Wu, Jun and Zhu, Qiuguo},
-  journal={arXiv preprint arXiv:2603.29452},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={CReF: Cross-modal and Recurrent Fusion for Depth-conditioned Humanoid Locomotion}, 
   year={2026},
-  url={https://arxiv.org/abs/2603.29452}
+  doi={10.1109/LRA.2026.3723339}}
 }`,
   footerNote:
     "This project page presents the paper, method, deployment videos, and citation information for CReF."
